@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: rgb(218, 242, 243);
+    background-color: rgba(193, 251, 135, 0.605);
 }
 main {
     margin: 0 auto;
@@ -40,7 +40,7 @@ h1 {
     margin: 1.5rem 2rem;
     font-size: 4rem;
     font-weight: 900;
-    color: royalblue;
+    color: rgb(55, 49, 225);
 }
 
 
@@ -48,7 +48,8 @@ fieldset {
     padding: 2rem;
     display: grid;
     grid-template-columns: 1fr;
-    border: 3px solid rgb(255, 255, 255)
+    border: 3px solid rgb(255, 255, 255);
+    width: 100%;
 }
 
 legend {
@@ -60,18 +61,40 @@ legend {
 
 span{
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: royalblue;
 }
+
+#muestreoprevis{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.forecast-item {
+    display: flex;
+    flex-direction: column; /* Organiza ícono y texto en columna */
+    align-items: center; /* Centra horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+.forecast-item p {
+    margin-top: 0.5rem; /* Espaciado entre el ícono y el texto */
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    color: royalblue; /* Color del texto */
+}
+
 
 #muestreo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
+    gap: 1rem;
 
     img {
-        max-width: 50%;
+        max-width: 100%;
+
     }
 
 }
@@ -80,13 +103,21 @@ padding: 5px 10px;
 
 }
 #textosNow {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: center; /* Centra verticalmente */
+    gap: .25rem; /* Espaciado entre los elementos */
     width: 100%;
     padding: 0 50px;
     
      p {
-        padding: .35rem;
+        display: flex;
+        align-items: center; /* Alinea iconos y texto verticalmente */
+        gap: 0.8rem; /* Espaciado entre el icono y el texto */
+        padding: 0 0.35rem 0.35rem 0.35rem;
      }
 }
+
 
 button {
     border: 2px solid rgb(52, 62, 120);

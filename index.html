@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My meteo</title>
+    <link rel="stylesheet" href="css/meteo.css">
+    <script src="js/meteo.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>My meteo</h1>
+    </header>
+    <main>
+        <section>
+        <form name="meteoForm">
+            <fieldset>
+                <legend id="titulo-formulario">Busca el tiempo en tu ciudad</legend>
+        <label> Ciudad:
+            <input type="text" name="city" id="city">
+        </label>
+        <br>
+        <label> Idioma:
+            <label>
+                <input
+                    type="radio"
+                    name="lang"
+                    value="es">
+                    Español
+            </label>
+            <label>
+                <input
+                    type="radio"
+                    name="lang"
+                    value="ca">
+                    Català
+            </label>
+            <label>
+                <input
+                    type="radio"
+                    name="lang"
+                    value="en">
+                    English
+            </label>
+            <br>
+            <button type="submit"> Busca </button>
+            </label>
+            </fieldset>
+    </form>
+    </section>
+    <section class="muestreo">
+        <fieldset id="muestreo">
+        <div id="textosNow">
+        <p id="description"></p>
+        <p id="temp"></p>
+        <p id="feels_like"></p>
+        <p id="temp_min"></p>
+        <p id="temp_max"></p>
+        <p id="humidity"></p>
+        <p id="speed"></p>
+        <p id="sunrise"></p>
+        <p id="sunset"></p>
+        </div>
+        <div id="iconNow">
+        </div>
+    </fieldset>
+    </section>
+    </main>
+</body>
+</html>

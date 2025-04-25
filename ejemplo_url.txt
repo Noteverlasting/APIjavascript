@@ -1,0 +1,13 @@
+
+
+Openweather API key:
+7b42076a65f2201a2b312c2d158874ac
+
+Llamada para la API de Openweather (ejemplo base):
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+
+Llamada para la API de Openweather (modificada):
+https://api.openweathermap.org/data/2.5/weather?units=metric&lang=ca&q=Barcelona&appid=7b42076a65f2201a2b312c2d158874ac
+
+Al introducir esta direccion en la navegación, nos proporcionará el codigo de la api, que podemos utilizar en javascript
